@@ -1,0 +1,271 @@
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html, body { width: 0; margin: 0; height: 100%; }
+.app { height: 100%; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: bold; }
+b { font-weight: bold !important; }
+
+.vc {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.please-rotate {
+  text-align: center;
+  display: none;
+  z-index: 999999;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0,0,0,.9);
+  color: white;
+}
+.please-rotate h1 { font-size: 2rem; line-height: 2.5rem; margin-bottom: 10px; }
+.please-rotate h2 { font-size: 1.5rem; line-height: 1rem; }
+@media (orientation: portrait) {
+  .please-rotate { display: block; }
+}
+
+@-moz-keyframes whoaaaa {
+  0% { background: #1f77b4; }
+  10% { background: #aec7e8; }
+  20% { background: #ff7f0e; }
+  30% { background: #ffbb78; }
+  40% { background: #2ca02c; }
+  50% { background: #98df8a; }
+  60% { background: #d62728; }
+  70% { background: #ff9896; }
+  80% { background: #9467bd; }
+  90% { background: #c5b0d5; }
+  100% { background: #8c564b; }
+}
+@-webkit-keyframes whoaaaa {
+  0% { background: #1f77b4; }
+  10% { background: #aec7e8; }
+  20% { background: #ff7f0e; }
+  30% { background: #ffbb78; }
+  40% { background: #2ca02c; }
+  50% { background: #98df8a; }
+  60% { background: #d62728; }
+  70% { background: #ff9896; }
+  80% { background: #9467bd; }
+  90% { background: #c5b0d5; }
+  100% { background: #8c564b; }
+}
+@keyframes whoaaaa {
+  0% { background: #1f77b4; }
+  10% { background: #aec7e8; }
+  20% { background: #ff7f0e; }
+  30% { background: #ffbb78; }
+  40% { background: #2ca02c; }
+  50% { background: #98df8a; }
+  60% { background: #d62728; }
+  70% { background: #ff9896; }
+  80% { background: #9467bd; }
+  90% { background: #c5b0d5; }
+  100% { background: #8c564b; }
+}
+
+button { cursor: pointer; outline: 0; }
+
+.win, .map {
+  position: fixed;
+  width: 100%; height: 100%;
+  left: 0; right: 0; bottom: 0; top: 0;
+  z-index: 0;
+}
+.map {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.win.intro { text-align: center; }
+
+.win.intro .disclaimer { padding: 1rem 0 0; font-size: 0.9rem; color: #999; }
+.win.intro .disclaimer i { font-size: 1.5rem; }
+.win.intro .disclaimer small { font-size: 0.5rem; display: block; margin-top: 5px; }
+@media (max-width: 600px) {
+  .win.intro .disclaimer { display: none; }
+}
+
+.win.intro h1 {
+  font-family: 'Sue Ellen Francisco', cursive; font-weight: 400;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  line-height: 3.4rem;
+  margin-bottom: 1rem;
+}
+.win.intro h4 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  margin-bottom: 0.2rem;
+  color: #999;
+  letter-spacing: 1px;
+}
+.win.intro h3 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-bottom: 1rem;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.win.intro button {
+  font-family: 'Sue Ellen Francisco', cursive; font-weight: 400;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background: black;
+  padding: 7px 3rem;
+  color: white;
+  display: inline-block;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.win.intro button:hover {
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-name: whoaaaa;
+  -webkit-animation-name: whoaaaa;
+  animation-name: whoaaaa;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.win.board {
+  text-align: center;
+}
+.win.board .countdown {
+  font-family: 'Sue Ellen Francisco', cursive; font-weight: 400;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 30px;
+  font-size: 8rem;
+  line-height: 8rem;
+  float: right;
+  text-shadow: rgb(250, 250, 250) 0px 0px 2px;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .win.board .countdown { font-size: 6rem; line-height: 6rem; }
+}
+
+.win.board .load-message {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  font-size: 3rem;
+  color: black;
+  line-height: 3rem;
+}
+
+.win.choose { background: #2a2a2a; }
+.win.choose .instructions {
+  font-family: 'Sue Ellen Francisco', cursive; font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(0,0,0,.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.win.choose .reset:hover {
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.win.choose .reset {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-name: whoaaaa;
+  -webkit-animation-name: whoaaaa;
+  animation-name: whoaaaa;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  color: black;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Sue Ellen Francisco', cursive; font-weight: 400;
+  font-size: 3rem;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .win.choose .reset { font-size: 1.4rem; line-height: 1.4rem; }
+}
+
+.gm-style-iw { text-align: center; }
+.gm-style-iw img { display: none !important; }
+.gm-style-iw h1 {
+  white-space: nowrap; line-height: 1.5rem; font-size: 1rem;
+  text-transform: uppercase;
+}
+.gm-style-iw h1.here {
+  font-family: 'Sue Ellen Francisco', cursive; color: blue;
+  font-size: 0.8rem; line-height: 1rem; text-transform: uppercase;
+  position: relative; bottom: -2px; height: 1rem;
+}
+.gm-style-iw h4 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  margin: 4px 0;
+}
+.gm-style-iw h5 {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: lighter;
+  color: green;
+}
+img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
+  display: none;
+}
+.map {
+ }

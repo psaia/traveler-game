@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Drunkography. | The Drinking Game</title>
+  <meta property="og:title" content="Drunkography. | The Drinking Game" />
+  <meta name="description" content="You just woke up in a strange place. Do you have any idea where you could be in the world?">
+  <meta property="og:description" content="You just woke up in a strange place.  Do you have any idea where you could be in the world?" />
+  <meta property="og:image" content="http://drunkographythegame.com/fb.png" />
+  <meta property="og:url" content="http://drunkographythegame.com/" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+  <link href='main.css' rel='stylesheet' type='text/css'>
+  <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyBr4iUUKDkz5wbcnUdRx_PyEFan0TXyfUE'></script>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57"
+  href="apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+  href="apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+  href="apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+  href="apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60"
+  href="apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120"
+  href="apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76"
+  href="apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152"
+  href="apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196"
+  />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+</head>
+<body>
+<div class='please-rotate'>
+  <div class='vc'>
+    <h1>Please rotate your device to play.</h1>
+    <h2><i class='fa fa-repeat'></i></h2>
+  </div>
+</div>
+<main id='app' class='app'></main>
+<script type='text/template' id='intro'>
+<section class='intro win'>
+  <div class='vc'>
+    <h4>&#8226; THE GAME &#8226;</h4>
+    <h3>DRUNKOGRAPHY</h3>
+    <h1>You are a drunkographer.</h1>
+    <button type='button'>Go!</button>
+    <div class='disclaimer'>
+      <p>Play on your <i class='fa fa-desktop'></i>, <i class='fa fa-tablet'></i>, and <i class='fa fa-mobile'></i>.<small>I don't care if you drink responsibly or not. You can't sue me.</small></p>
+    </div>
+  </div>
+</section>
+</script>
+<script type='text/template' id='board'>
+<section class='board win'>
+  <div class='map'></div>
+  <h2 class='load-message vc'></h2>
+  <div class='countdown'>10</div>
+</section>
+</script>
+<script type='text/template' id='choose'>
+<section class='choose win'>
+  <div class='map'></div>
+  <div class='instructions'>Where were you?</div>
+</section>
+</script>
+<script language='javascript' type='text/javascript' src='src/places.js'></script>
+<script language='javascript' type='text/javascript' src='src/main.js'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-65290174-2', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
